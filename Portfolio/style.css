@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-ctn {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.col1 {
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+}
+
+.face {
+    margin-top: 4%;
+    margin-left: 35%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profilename {
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 28%; 
+    color: #e278e2;
+}
+
+.tabs a {
+    display: flex;
+    font-size: 20px; 
+    margin-left: 2%;
+    color: white;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+.tabs a:hover {
+    color: #e278e2;
+}
+
+h3 {
+    margin: 10%;
+    display: grid;
+    place-items: center;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.col2 {
+    width: 75%;
+    background-color: rgb(182, 142, 202);
+}
+
+.img {
+    width: 100%;
+    height: 100vh;
+}
+
+.center {
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, 50%);
+    animation: slideIn 4s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.abt {
+    position: absolute;
+    font-size: 115%;
+    font-weight: 500;
+    top: 43%;
+    left: 35%;
+    animation: fadeInUp 4s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.content-section {
+    display: none;
+}
+
+
+.content-section.active {
+    display: block;
+}
+
+.about, .portfolio {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+.title{
+    font-size: 30px;
+}
+.aboutMe{
+     padding: 20px;
+     margin-top: 60px;
+     font-size: 20px;
+}
+.port,.contacts{
+    margin: 20px;
+    font-size: 20px;
+}
